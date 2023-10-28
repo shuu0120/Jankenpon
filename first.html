@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>HTML・CSS演習</title>
+    <title>じゃんけんゲーム</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/first.css">
@@ -11,7 +11,41 @@
 
 <body>
 
-    <h1 class="col">こんにちは</h1>
+    <div class="back">
+        <div>
+            <h1 class="title">じゃんけんバトル</h1>
+            <p class="enemyHP" id="enemyHp">HP :3 </p>
+        </div>
+        <div class="enemy">
+            <img class="enemy1" id="enemy1pic" src="picture/enemy1.png" alt="">
+        </div>
+
+        <div class="enemyhand-position">
+            <img class="enemyHand" id="enHand" src="picture/EnemyHand.png" alt="">
+        </div>
+
+        <div>
+            <p class="explain-text" id="explain">ボタンをタッチしよう！</p>
+        </div>
+
+        <p class="playerHP" id="playerhp">HP :5 </p>
+
+        <div class="hand-position">
+            <ul class="allHand">
+                <li> <button class="hand" id="rockhand"> <img class="handsize" src="picture/rock.png" alt=""></button>
+                </li>
+                <li><button class="hand" id="scissorshand"> <img class="handsize" src="picture/scissors.png"
+                            alt=""></button></li>
+                <li> <button class="hand" id="paperhand"> <img class="handsize" src="picture/paper.png" alt=""></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/first.js"></script>
+
+
 </body>
 
 </html>
